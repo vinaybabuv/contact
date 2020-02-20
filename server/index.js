@@ -11,13 +11,20 @@ app.use(bodyParser.json())
 app.get('/list', (req, res) => {
     setTimeout(() => {
         res.send(contacts())
-    }, 2000)
+    }, 1000)
 })
 
 app.get('/id/:id', (req, res) => {
     setTimeout(() => {
         res.send(contacts(req.params.id))
-    }, 2000)
+    }, 1000)
+})
+
+
+app.post('/id/:id', (req, res) => {
+    setTimeout(() => {
+        res.send(req.body)
+    }, 1000)
 })
 
 var PORT = process.env.PORT || 3004

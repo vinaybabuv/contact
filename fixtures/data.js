@@ -1,31 +1,31 @@
 module.exports = (id) => {
     let contacts = [
         {
-            id: 1,
+            id: "1",
             name : "vinay" ,
             contact : 4694519964 ,
             type : "mobile"
         },
         {
-            id: 2,
+            id: "2",
             name : "Surendra" ,
             contact : 4694519964 ,
             type : "Home"
         },
         {
-            id: 3,
+            id: "3",
             name : "Mannam" ,
             contact : 4694519964 ,
             type : "mobile"
         },
         {
-            id: 4,
+            id: "4",
             name : "siddu" ,
             contact : 4694519964 ,
             type : "mobile"
         },
         {
-            id: 5,
+            id: "5",
             name : "Chaitanya" ,
             contact : 4694519964 ,
             type : "Home"
@@ -35,6 +35,5 @@ module.exports = (id) => {
     if (!id) {
         return contacts
     }
-
-    return contacts.filter(contact =>  id === contact.id).pop()
+   return contacts.filter(contact => id === contact.id).pop()
 };
